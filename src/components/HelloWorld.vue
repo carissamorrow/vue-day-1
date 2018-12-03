@@ -1,10 +1,12 @@
 <template>
   <div id="hello-life">
     <h1>Welcome To My New Slap Game</h1>
-    <img src="http://worldartsme.com/images/animated-face-slap-clipart-1.jpg">
-    <button @click='attack(1)'>SLAP</button>
-    <button @click='attack(5)'>Punch</button>
-    <button @click='attack(10)'>Kick</button>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrxHEkB15etL8g9BgeR98I2tH4Auw8lMtfZ0XaxwgOM44U87s0jA">
+    <div class="button">
+      <button @click='attack(1)'>SLAP</button>
+      <button @click='attack(5)'>Punch</button>
+      <button @click='attack(10)'>Kick</button>
+    </div>
   </div>
 </template>
 
@@ -30,8 +32,17 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  #hello-life {
+    background-color: lightblue;
+  }
+
+  button {
+    size: 40px;
+  }
+
   img {
     height: 300px;
+    position: relative
   }
 
   h3 {
