@@ -5,7 +5,7 @@
     <div class="button">
       <button @click='attack(1)'>SLAP</button>
       <button @click='attack(5)'>Punch</button>
-      <button @click='attack(10)'>Kick/button>
+      <button @click='attack(10)'>Kick</button>
     </div>
   </div>
 </template>
@@ -37,7 +37,9 @@
   }
 
   button {
-    size: 40px;
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
   }
 
   img {
